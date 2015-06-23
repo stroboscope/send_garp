@@ -1,0 +1,13 @@
+Source: linux-modules-send-garp
+Section: kernel
+Priority: extra
+Maintainer: Sergey Viuchny <sergey@de-bs.ru>
+Build-Depends: debhelper (>= 8.0.0), bzip2, linux-image-3.16.0-0.bpo.4-amd64,
+ linux-kbuild-3.16, linux-headers-3.16.0-0.bpo.4-all
+Standards-Version: 3.9.6
+
+Package: linux-modules-send-garp
+Architecture: amd64
+Description: send_garp Linux module
+ Send gratuitous arp on some netdev events.
+ This package contains simple loadable kernel module.
